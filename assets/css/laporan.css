@@ -1,0 +1,31 @@
+/* Halaman laporan */
+.report-filter-panel {
+    margin-bottom: 20px;
+}
+
+.report-filters {
+    align-items: end;
+}
+
+.report-filters .module-filter-field {
+    flex: 1 1 185px;
+}
+
+.report-stats {
+    margin-bottom: 20px;
+}
+
+.report-table {
+    min-width: 1000px;
+}
+
+.report-table th {
+    white-space: nowrap;
+}
+
+@media (max-width: 680px) {
+    .report-filters .module-filter-field {
+        flex: auto;
+        width: 100%;
+    }
+}

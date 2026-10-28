@@ -1,0 +1,264 @@
+.rentcar-profile-page {
+    margin: 0;
+    background: #101214;
+    color: #f4f5f6;
+    font-family: Arial, sans-serif
+}
+
+.profile-shell {
+    width: min(1100px, calc(100% - 32px));
+    margin: 36px auto 60px
+}
+
+.profile-header {
+    margin-bottom: 24px
+}
+
+.profile-header h1 {
+    margin: 18px 0 8px;
+    font-size: clamp(28px, 4vw, 40px)
+}
+
+.profile-header p,
+.profile-rental p {
+    color: #aeb4bc
+}
+
+.profile-back {
+    color: #ff3547;
+    text-decoration: none
+}
+
+.profile-card,
+.profile-rental {
+    background: #191c20;
+    border: 1px solid #343940;
+    border-radius: 14px;
+    padding: 22px
+}
+
+.profile-card {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    margin-bottom: 32px
+}
+
+.profile-card>div {
+    display: grid;
+    gap: 7px;
+    min-width: 0
+}
+
+.profile-label,
+.profile-payment-summary,
+.profile-rental-total span {
+    font-size: 13px;
+    color: #aeb4bc
+}
+
+.profile-action {
+    grid-column: 1/-1;
+    justify-self: start;
+    background: #e32636;
+    color: white;
+    text-decoration: none;
+    padding: 11px 16px;
+    border-radius: 8px
+}
+
+.profile-history h2 {
+    font-size: 24px
+}
+
+.profile-transactions {
+    display: grid;
+    gap: 14px
+}
+
+.profile-rental-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px
+}
+
+.profile-code {
+    font-size: 12px;
+    color: #ff5260
+}
+
+.profile-rental h3 {
+    margin: 8px 0
+}
+
+.profile-rental-total {
+    display: grid;
+    align-content: start;
+    text-align: right;
+    gap: 6px
+}
+
+.profile-rental-total strong {
+    font-size: 19px
+}
+
+.profile-payment-summary {
+    display: flex;
+    gap: 12px 22px;
+    flex-wrap: wrap;
+    border-top: 1px solid #343940;
+    margin-top: 16px;
+    padding-top: 14px
+}
+
+.profile-empty {
+    background: #191c20;
+    border-radius: 12px;
+    padding: 24px;
+    color: #b7bdc5
+}
+
+@media(max-width:600px) {
+    .profile-card {
+        grid-template-columns: 1fr;
+        padding: 17px
+    }
+
+    .profile-rental-main {
+        display: grid
+    }
+
+    .profile-rental-total {
+        text-align: left
+    }
+
+    .profile-shell {
+        width: calc(100% - 24px);
+        margin-top: 20px
+    }
+}
+
+.profile-notice {
+    border: 1px solid #3a4149;
+    background: #1b2025;
+    color: #e7ebef;
+    padding: 14px 16px;
+    border-radius: 10px;
+    margin: 0 0 18px;
+    line-height: 1.55
+}
+
+.profile-notice-success {
+    border-color: rgba(48, 170, 105, .45);
+    background: rgba(48, 170, 105, .1)
+}
+
+.profile-notice-error {
+    border-color: rgba(227, 38, 54, .55);
+    background: rgba(227, 38, 54, .1)
+}
+
+.profile-rental-image {
+    width: 100%;
+    max-width: 190px;
+    aspect-ratio: 16/10;
+    object-fit: cover;
+    background: #24272b;
+    border-radius: 10px;
+    margin: 8px 0 14px
+}
+
+.profile-payment-history {
+    margin-top: 18px;
+    border-top: 1px solid #343940;
+    padding-top: 14px
+}
+
+.profile-payment-history h4 {
+    font-size: 15px;
+    margin: 0 0 10px
+}
+
+.profile-payment-items {
+    display: grid;
+    gap: 8px
+}
+
+.profile-payment-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 14px;
+    padding: 10px 12px;
+    border: 1px solid #343940;
+    border-radius: 8px;
+    min-width: 0
+}
+
+.profile-payment-item span {
+    color: #aeb4bc;
+    font-size: 13px;
+    overflow-wrap: anywhere
+}
+
+.profile-payment-item strong {
+    text-align: right;
+    white-space: nowrap
+}
+
+.profile-payment-state {
+    display: inline-flex;
+    border-radius: 30px;
+    background: #292d32;
+    color: #f5f6f7;
+    padding: 5px 10px;
+    font-size: 12px
+}
+
+@media(max-width:700px) {
+    .profile-payment-item {
+        flex-direction: column;
+        gap: 4px
+    }
+
+    .profile-payment-item strong {
+        text-align: left
+    }
+
+    .profile-rental-image {
+        max-width: none
+    }
+}
+
+.profile-pay-action {
+    display: inline-flex;
+    margin: 14px 10px 0 0;
+    grid-column: auto
+}
+
+.profile-cancel-form {
+    margin-top: 14px
+}
+
+.profile-cancel-button {
+    background: transparent;
+    border: 1px solid #a83a45;
+    color: #ff8c96;
+    border-radius: 8px;
+    padding: 10px 14px;
+    cursor: pointer;
+    font: inherit
+}
+
+.profile-cancel-button:hover {
+    background: rgba(227, 38, 54, .1);
+    border-color: #e32636
+}
+
+.profile-payment-item a {
+    color: #ff5260;
+    text-decoration: none
+}
+
+.profile-payment-item a:hover {
+    text-decoration: underline
+}

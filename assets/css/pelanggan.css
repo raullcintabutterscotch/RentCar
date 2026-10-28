@@ -1,0 +1,58 @@
+/* Halaman pelanggan */
+.customer-page-grid {
+    display: grid;
+    grid-template-columns: minmax(270px, .78fr) minmax(0, 1.6fr);
+    align-items: start;
+    gap: 18px;
+}
+
+.customer-form-panel,
+.customer-list-panel {
+    min-width: 0;
+}
+
+.customer-form-panel .vehicle-panel-heading,
+.customer-list-panel .vehicle-panel-heading {
+    align-items: flex-start;
+}
+
+.customer-form {
+    grid-template-columns: minmax(0, 1fr);
+    padding: 16px;
+}
+
+.customer-form .module-form-actions-wide {
+    grid-column: auto;
+}
+
+.customer-list-panel .module-filters {
+    padding: 12px;
+}
+
+.customer-list-panel .module-table {
+    min-width: 850px;
+}
+
+@media (max-width: 1100px) {
+    .customer-page-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .customer-form {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .customer-form .module-form-actions-wide {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 620px) {
+    .customer-form {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .customer-form .module-form-actions-wide {
+        grid-column: auto;
+    }
+}

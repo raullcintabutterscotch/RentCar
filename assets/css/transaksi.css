@@ -1,0 +1,29 @@
+/* Halaman transaksi */
+.transaction-create-form {
+    padding: 20px;
+}
+
+.transaction-estimate {
+    align-self: stretch;
+    min-height: 88px;
+}
+
+.transaction-estimate strong {
+    font-size: 17px;
+}
+
+.transaction-create-form .module-form-actions-wide {
+    align-items: end;
+}
+
+.payment-inline-form .vehicle-btn {
+    min-height: 32px;
+    padding: 6px 9px;
+    font-size: 10px;
+}
+
+@media (max-width: 680px) {
+    .transaction-create-form {
+        padding: 14px;
+    }
+}

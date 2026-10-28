@@ -1,0 +1,22 @@
+/* Halaman pengembalian */
+.return-form {
+    padding: 20px;
+}
+
+.return-estimate {
+    min-height: 88px;
+}
+
+.return-estimate strong {
+    font-size: 16px;
+}
+
+.return-form .module-form-actions-wide {
+    align-items: center;
+}
+
+@media (max-width: 680px) {
+    .return-form {
+        padding: 14px;
+    }
+}

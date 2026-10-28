@@ -1,0 +1,15 @@
+/* Penyesuaian khusus formulir edit kendaraan */
+.vehicle-form-panel {
+    max-width: 1120px;
+}
+
+.vehicle-existing-photo {
+    border-color: var(--line);
+    background: var(--bg-side);
+}
+
+@media (max-width: 640px) {
+    .vehicle-form-panel {
+        padding: 14px;
+    }
+}

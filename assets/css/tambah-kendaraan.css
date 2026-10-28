@@ -1,0 +1,14 @@
+/* Penyesuaian khusus formulir kendaraan baru */
+.vehicle-form-panel {
+    max-width: 1120px;
+}
+
+.vehicle-form-field input:required:invalid:not(:focus):not(:placeholder-shown) {
+    border-color: rgba(227, 38, 54, .45);
+}
+
+@media (max-width: 640px) {
+    .vehicle-form-panel {
+        padding: 14px;
+    }
+}

@@ -1,0 +1,212 @@
+/* Pengaturan akun RentCar */
+.settings-layout {
+    display: grid;
+    grid-template-columns: 220px minmax(0, 1fr);
+    align-items: start;
+    gap: 18px;
+}
+
+.settings-menu,
+.settings-panel {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+}
+
+.settings-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+}
+
+.settings-menu a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-height: 42px;
+    padding: 10px 12px;
+    color: var(--text-2);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: background .18s ease, border-color .18s ease, color .18s ease;
+}
+
+.settings-menu a i {
+    color: var(--muted);
+    font-size: 16px;
+}
+
+.settings-menu a:hover,
+.settings-menu a.active {
+    color: #fff;
+    background: var(--red-soft);
+    border-color: rgba(227, 38, 54, .26);
+}
+
+.settings-menu a.active i {
+    color: var(--red-text);
+}
+
+.settings-panel {
+    min-width: 0;
+    padding: 24px;
+}
+
+.module-panel-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 18px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line-soft);
+}
+
+.module-panel-heading h2 {
+    margin: 0;
+    color: var(--text);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.module-panel-heading p {
+    margin: 7px 0 0;
+    color: var(--muted);
+    font-size: 12px;
+    line-height: 1.7;
+}
+
+.settings-avatar {
+    display: inline-flex;
+    flex: 0 0 48px;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    color: var(--red-text);
+    background: var(--red-soft);
+    border: 1px solid rgba(227, 38, 54, .25);
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.module-form {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 17px;
+}
+
+.module-field {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    min-width: 0;
+    color: var(--text-2);
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.module-field input,
+.module-field select,
+.module-field textarea {
+    width: 100%;
+    min-height: 42px;
+    padding: 10px 12px;
+    color: var(--text);
+    background: var(--bg-side);
+    border: 1px solid var(--line);
+    border-radius: 4px;
+    outline: none;
+    font: inherit;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.module-field textarea {
+    min-height: 95px;
+    resize: vertical;
+}
+
+.module-field input:focus,
+.module-field select:focus,
+.module-field textarea:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px var(--red-soft);
+}
+
+.module-field input[readonly] {
+    color: var(--muted);
+    background: var(--raised);
+}
+
+.module-field small {
+    color: var(--muted);
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
+.module-form-actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding-top: 7px;
+}
+
+.password-input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.password-input-wrap input {
+    padding-right: 45px;
+}
+
+.password-visibility {
+    position: absolute;
+    right: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    color: var(--muted);
+    background: transparent;
+    border: 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.password-visibility:hover {
+    color: var(--red-text);
+    background: var(--raised);
+}
+
+@media (max-width: 760px) {
+    .settings-layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .settings-menu {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 560px) {
+    .settings-panel {
+        padding: 17px;
+    }
+
+    .module-form {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .module-panel-heading h2 {
+        font-size: 18px;
+    }
+}
